@@ -21,8 +21,6 @@ print(p.predict([1,1]))
 fields = ['w0', 'w1', 'w2']
 weights = p.getWeights()
 
-with open("data.csv" , 'w') as csvfile:
+with open("weights.csv" , 'w') as csvfile:
     csvwriter = csv.writer(csvfile)    
     csvwriter.writerows([fields,weights])  
-    #csvwriter.writerow(weights) 
-
